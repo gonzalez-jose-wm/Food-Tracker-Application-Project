@@ -2,47 +2,65 @@
 <html>
 
 <head>
-    <title> Hello </title>
+    <title> Food Tracker </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="javaScript.js"></script>
+
+    <script src="jqueryjs"></script>
 </head>
-<link rel="stylesheet" type="text/css" href="style.css">
+
 <body>
-<input type="checkbox" id="checkbox" /><label class="fa fa-bars fa-2x" for="checkbox"></label>
+
+<input type="checkbox" id="checkbox"/> <label class="fa fa-bars fa-2x" for="checkbox">
+    <img id="arrow" src="http://4vector.com/i/free-vector-kuba-arrow-button-set-clip-art_117492_Kuba_Arrow_Button_Set_clip_art_hight.png"  onclick="diffImage(this)" width="45px" height="45px">
+</label>
 <nav role='navigation'>
     <ul class="nav">
-        <li><a href="#page-home">Welcome</a></li>
+        <li><a href="#page-home">Home</a></li>
         <li><a href="#page-about">About</a></li>
         <li><a href="#page-contact">Food Tracker</a></li>
-    </ul>
-    <ul class="soc-media">
-        <li><a href="#" class="fa fa-twitter"></a></li>
-        <li><a href="#" class="fa fa-facebook"></a></li>
-        <li><a href="#" class="fa fa-google-plus"></a></li>
     </ul>
 </nav>
 <main class="wrapper">
     <div class="overlay"></div>
-    <h1>Welcome to <br> My Food Tracker!</h1>
+    <div class="headerPage2">Welcome to <br> My Food Tracker!</div>
+    <link async href="http://fonts.googleapis.com/css?family=Anton" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
 
     <section class="home" id="page-home"></section>
+
     <section class="about" id="page-about">
         <div class="content">
-            <h1>What Is This For?</h1>
-            <p>This website is used for a alternate of a notebook to keep track of foods that you would eat. Usually when someone writes down everything that they eat in a notebook or organizer, they tend to lose weight. Based on this concept you could make changes based on the results weakly. The more you put down foods you can visual what is truly healthy and this habit is good for any dieters or non-dieters.</p>
+            <div class="headerPage">What Is This For?</div>
+            <link async href="http://fonts.googleapis.com/css?family=Anton" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+            <p>This website is used for a alternative of a notebook to keep track of foods that you would buy. Usually when someone writes down everything that they buy, it will help them figure out the date that the food was purchased. This website does it for you! </p>
         </div>
     </section>
 
+    <!-- Food tracker page !-->
     <section class="foodTracker" id="page-contact">
         <div class="content">
-            <h1>Start Here!</h1>
-            <h2>..</h2>
-            <h3>...</h3>
+            <div class="headerPage">Food Tracker</div>
+            <link async href="http://fonts.googleapis.com/css?family=Anton" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+            <div id="data">
+                <table id="myTable">
+                    <thead>
+                    <tr>
+                        <th class="text-left"><strong> Food Item</strong></th>
+                        <th class="text-left"><strong> Description  </strong></th>
+                        <th class="text-left"><strong> Purchase Date </strong></th>
+                        <th class="text-left"><strong>Expiration Date </strong></th>
+                    </tr>
+                    </thead>
+
+                    <tbody class="table-hover">
+
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 </main>
 
 </body>
 </html>
-
-<!-- link to site
-http://codepen.io/alexdevero/pen/sCwiG#0
-<!-->

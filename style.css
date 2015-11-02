@@ -1,22 +1,6 @@
 /*Typography*/
 html {
-    font: 16px 'Lobster', serif;
-}
-
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.75em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
-p {
-    font-size: 1.25em;
+    font: 16px, serif;
 }
 
 /*BASE*/
@@ -34,56 +18,54 @@ body {
 /*Navigation*/
 nav {
     position: relative;
-    left: -12em;
-    width: 6em;
-    height: 100%;
+    text-align: center;
+    left: -15em;
+    width: 6.3em;
+    height: 26%;
     background: #20747D;
     font-family: 'Roboto Condensed', sans-serif;
     -webkit-transition: left .85s linear;
     transition: left .85s linear;
 }
-
 .nav ul {
     float: left;
     width: 100%;
 }
-
 .nav a,
-.fa-bars,
-.soc-media a {
+.fa-bars {
     display: block;
     color: #fff;
+    text-shadow: 2px 2px 6px rgb(118, 118, 118) , 3px 3px rgb(0, 146, 255);
     font-weight: bold;
     text-decoration: none;
     -webkit-transition: background .35s;
     transition: background .35s;
 }
+
+/*hover effect */
 .nav a:hover,
-.fa-bars:hover,
-.soc-media a:hover {
-    background: #7D2020;
+.fa-bars:hover, {
+    background: #00e3fc;
 }
 .nav a:active,
-.fa-bars:active,
-.soc-media a:active {
-    background: #7D2020;
+.fa-bars:active {
+    background: #00e3fc;
 }
-
 .nav a {
     padding: 1em .5em;
-    width: 100%;
+    width: 60%;
 }
-
+/* button nav*/
 .fa-bars {
     position: absolute;
     left: 0em;
     padding: .25em 0;
-    z-index: 99;
-    width: 2em;
+    z-index: 1;
+    width: 3.3em;
+    height: 3.3em;
     background: #20747D;
-    text-align: center;
     -webkit-transition: left .75s ease-in-out;
-    transition: left .75s ease-in-out;
+    transition: left .85s ease-in-out;
 }
 .fa-bars:hover {
     cursor: pointer;
@@ -93,27 +75,10 @@ nav {
     display: none;
 }
 [type="checkbox"]:checked + label {
-    left: 3em;
+    left: 6.8em;
 }
 [type="checkbox"]:checked ~ nav {
     left: 0;
-}
-
-/*Social media*/
-.soc-media {
-    position: absolute;
-    bottom: 5px;
-}
-
-.soc-media li {
-    float: left;
-}
-
-.soc-media a {
-    padding: .5em 0;
-    width: 2em;
-    font-weight: normal;
-    text-align: center;
 }
 
 /*Page Wrapper*/
@@ -124,17 +89,7 @@ nav {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: url(http://www.gratisography.com/pictures/119.jpg) no-repeat;
     background-size: cover;
-}
-
-.wrapper > h1 {
-    position: absolute;
-    top: 45%;
-    width: 100%;
-    color: #20747D;
-    font-size: 3em;
-    text-align: center;
 }
 
 .overlay {
@@ -161,35 +116,83 @@ section {
 
 section .content {
     margin: 1em auto;
-    max-width: 900px;
+    max-width: 600px;
     width: 60%;
     color: #20747D;
 }
 
-section h1,
-section h2,
-section h3,
+/* paragraphs */
 p {
     margin-bottom: .5em;
     text-align: center;
-}
-
-section p {
     margin: .5em 0;
-    font-family: 'lobster';
+    font-family: Lobster;
+    color: black;
+    font-size: 1.25em;
 }
 
-/*Home page*/
-/*About page*/
+/*About page fade*/
 .about {
     background: rgba(255, 255, 255, 0.75);
 }
 
-/*food tracker page*/
+/*food tracker page fade*/
 .foodTracker {
     background: rgba(255, 255, 255, 0.75);
 }
 
-p {
-    color: black;
+/* Hides bullets*/
+ul
+{
+    list-style-type: none;
+    margin: 0px -33px;
+}
+
+/* home header */
+.wrapper > .headerPage2 {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0 auto;
+    border: none;
+    font: normal 82px/normal "Anton", Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    letter-spacing: 10px;
+    text-shadow: 4px 4px 0 rgb(238,238,238) , 6px 6px 0 rgb(112,112,112) ;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(0.8);
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    color: #20747D;
+    text-align: center;
+}
+
+/* about and food tracker Headers */
+.headerPage {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0 auto;
+    border: none;
+    font: normal 82px/normal "Anton", Helvetica, sans-serif;
+    color: 20747D;
+    text-align: center;
+    text-transform: uppercase;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    letter-spacing: 10px;
+    text-shadow: 4px 4px 0 rgb(238,238,238) , 6px 6px 0 rgb(112,112,112) ;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(0.8);
+}
+
+#arrow {
+    position: relative;
+    left:2.5px;
 }
